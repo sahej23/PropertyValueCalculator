@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0ffae">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MORTGAGE CALCULATOR"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_centerHorizontal="true"
+        android:background="#7de971"
+        android:layout_marginTop="12dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="#a4d1a5"
+        android:layout_marginTop="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Loan Amount"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/loan_amount"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="enter the loan amount"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Monthly Interest Rate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/int_rate"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="50dp"
+                android:hint="Enter Interest Rate"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Total Months"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/loan_period"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="Enter Loan Period"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/mor_cal"
+                android:layout_height="wrap_content"
+                android:text="CALCULATE"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/mor_reset"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Installment You Should Pay: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:id="@+id/tv1"
+            android:text=""/>
+    </LinearLayout>
+
+</RelativeLayout>

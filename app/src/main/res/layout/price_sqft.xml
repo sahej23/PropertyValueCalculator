@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0ffae">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROPERTY PRICE"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_centerHorizontal="true"
+        android:background="#7de971"
+        android:layout_marginTop="12dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="#a4d1a5"
+        android:layout_marginTop="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Property Price"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/price_pro"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:hint="Property Price"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Size"/>
+            <EditText
+                android:id="@+id/price_sq_sq"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_below="@+id/price_pro"
+                android:layout_height="wrap_content"
+                android:hint="Square Feet"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/sqft_cal"
+                android:layout_height="wrap_content"
+                android:text="CALCULATE"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/sqft_reset"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price Per Square Feet Of The Property:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text=" "
+            android:id="@+id/tv2"/>
+    </LinearLayout>
+</RelativeLayout>
